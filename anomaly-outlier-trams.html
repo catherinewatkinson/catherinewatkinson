@@ -1,0 +1,152 @@
+<!-- trams.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/portfolio_style.css">
+    <!-- Glide -->
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <!-- Google Icons/Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>PolyChord</title>
+</head>
+
+<body>
+        <!-- NAV Bar -->
+        <nav class="navbar" id='menu'>
+            <a class="branding-link" href="index.html"><img src="images/logos/logo-white.png" alt="nav-logo.png" class="nav-branding"></a>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href='index.html#partners'>Partners</a></li>
+                <li><a href='index.html#contact'>Contact Us</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+    <!-- Home Section -->
+    <section>
+
+      <!-- Header text -->
+      <div class="portfolio-section-imgwrap">
+          <h2 id="section-head-portfolio">Anomaly and Outlier Detection</h2>
+      </div>
+
+      <div class="portfolio-section-imgwrap">
+          <!-- Image div on the left -->
+          <div class="image-left-portfolio">
+              <img src="images/Front-page/tram_2.jpg" class="portfolio-img" alt="Card image cap", style="width:80%">
+          </div>
+
+          <div class="left-body-portfolio">
+              <p>It is <strong>highly desirable for many systems to identify when a component is operating outside of its usual designed range of behaviour</strong>, and therefore is in need of maintenance or replacement. For example, when blades on a wind turbine develop cracks, this must be detected and monitored; similarly rail track degrades over time, and visually inspecting extensive networks or regular use of  complex measurement trains are major expenses.</p>
+          </div>
+      </div>
+      <br>
+      <!-- Centred text below first image -->
+      <div class="portfolio-section-fullwidth">
+
+          <div class="fullwidth-body-portfolio">
+
+            <p><strong>PolyChord applies a variety of data-science techniques to analyse large amounts of data from low-cost accelerometers and other sensors, in order to identify outlier behaviour</strong>. This affordable and continuous condition-monitoring solution then raise alarms where major issues are identified, and provides a list of all issues, prioritised by their severity, to enable maintenance crews to effectively prioritise their workloads and resources.</p>
+          </div>
+      </div>
+
+      <!-- Customer Case Study Section -->
+
+      <h2 id="section-subhead-portfolio">Customer Case Studies - PolyTrack</h2>
+
+      <div class="portfolio-section-imgwrap">
+        <!-- First Case study text w image on the left -->
+        <div class="image-left-portfolio">
+            <img src="images/Front-page/polytrack-img-3.png" class="portfolio-img" alt="PolyTrack points of interest count overlaid on track">
+        </div>
+        <div class="left-body-portfolio">
+            <p>Many Tram & Light-Rail companies currently send their staff walking along long stretches of rail to try to spot track defects. This is inefficient and unsafe. Blanket tamping of track is also commonplace, which degrades the track, and reduces its lifetime.</p>
+
+            <br>
+            <p>
+            PolyTrack provides <strong>affordable track and vehicle monitoring for Tram, Light Rail, and Heavy Rail</strong>  - detecting faults and prioritizing maintenance needs. With PolyTrack’s cutting-edge data analysis, operators can <strong>proactively address track and vehicle issues, enhancing safety and reducing disruptions.</strong>
+           </p>
+        </div>
+
+      </div>
+      <br>
+      <!-- 2nd block Case study text w image on the right -->
+      <div class="portfolio-section-imgwrap">
+        <div class="right-body-portfolio">
+            <p><strong>PolyTrack integrates cost-effective accelerometers and GPS sensors to continuously monitor track conditions and vehicle performance.</strong> Transferring a host of signal-processing techniques from academia, and integrating information from multiple passes over the same locations, this tool objectively identifies, ranks, and maps faults—like rough rides and track defects—based on severity. PolyTrack empowers maintenance teams with actionable insights and a clear prioritization system, all easily accessible through a secure web-based application.
+            </p>
+            <br>
+            <p>
+            The PolyTrack tool is in use by West Midlands Metro and Edinburgh Trams, and has been applied for London North-East Rail to investigate issues they were experiencing, that were likely caused by vehicle yaw (a see-sawing of the vehicle's nose and tail in the horizontal plane, i.e. left to right).</p>
+        </div>
+        <div class="image-right-portfolio">
+            <img src="images/Front-page/polytrack-img-2.png" class="portfolio-img" alt="PolyTrack dashboard with points of interest location markers overlaid on track", style="max-width:105%">
+        </div>
+      </div>
+
+
+
+  </section>
+
+
+
+
+            <!-- Footer -->
+            <section id=footer>
+            <footer>
+               <div class="footer-container">
+                   <div class="footer__socials-container">
+                       <a href="https://twitter.com/polychordcouk" target="_blank" class="social__link" rel="noopener noreferrer">
+                           <img src="images/icons/twitter.png" alt="twitter.png" class="social__img">
+                       </a>
+                       <a href="https://www.linkedin.com/company/polychord-ltd/" target="_blank" class="social__link" rel="noopener noreferrer ">
+                           <img src="images/icons/linkedin.png" alt="linkedin.png" class="social__img">
+                       </a>
+                       <a href="https://www.youtube.com/channel/UCeTdzBWCAklZFQk9dv-XrnQ" target="_blank" class="social__link" rel="noopener noreferrer ">
+                           <img src="images/icons/youtube.png" alt="youtube.png" class="social__img">
+                       </a>
+                   </div>
+                   <div class="footer__info-container">
+                       <a href="privacy-policy.html" class="footer__text-link">
+                           <p class="footer__text">Privacy Policy</p>
+                       </a>
+                       <div class="footer__bullet"></div>
+                       <p class="footer__text">©2024 PolyChord Ltd</p>
+                       <div class="footer__bullet"></div>
+                       <a href="contact.html" class="footer__text-link">
+                           <p class="footer__text">Contact Page</p>
+                       </a>
+                   </div>
+               </div>
+            </footer>
+            </section>
+   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+   <script>
+       function updatemenu() {
+       if (document.getElementById('responsive-menu').checked == true) {
+           document.getElementById('menu').style.borderBottomRightRadius = '0';
+           document.getElementById('menu').style.borderBottomLeftRadius = '0';
+       }else{
+           document.getElementById('menu').style.borderRadius = '10px';
+       }
+       }
+   </script>
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!-- trams.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/portfolio_style.css">
+    <!-- Glide -->
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <!-- Google Icons/Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>PolyChord</title>
+</head>
+
+<body>
+        <!-- NAV Bar -->
+        <nav class="navbar" id='menu'>
+            <a class="branding-link" href="index.html"><img src="images/logos/logo-white.png" alt="nav-logo.png" class="nav-branding"></a>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href='index.html#partners'>Partners</a></li>
+                <li><a href='index.html#contact'>Contact Us</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+    <!-- Main Section -->
+    <section>
+
+      <!-- Header text -->
+      <div class="portfolio-section-imgwrap">
+          <h2 id="section-head-portfolio">SimXelerate AI Emulator to Accelerate Inherently ‘Slow’ Simulations</h2>
+      </div>
+
+      <!-- First section with image on the left -->
+      <div class="portfolio-section-imgwrap">
+          <!-- Image div on the left -->
+          <div class="image-left-portfolio">
+                <img src="images/info-page-pictures/battery_img1.png" class="portfolio-img" alt="Image of car battery">
+          </div>
+          <div class="left-body-portfolio">
+            <p>The <strong>output of many complex industrial simulations is extremely complicated and depends on a large number of input parameters.</strong> Whilst these simulations have had huge impact since they are substantially faster than real-life experimentation,<strong> they still take hours or even days to produce output for a single configuration</strong> of their input parameters. This makes them <strong>orders-of-magnitude too slow to be used for many applications</strong>, for example, Electric-Vehicle (EV) battery simulations  are currently too slow for use in battery management systems.
+          </div>
+      </div>
+      <br>
+      <!-- 2nd section with centred image of SimXelerate process -->
+      <div class="portfolio-section-fullwidth">
+        <div class="fullwidth-body-portfolio">
+            <p>For complex simulations to be more widely applicable as practical solutions where near real-time calculations are needed, there is <strong> a strong need for AI emulators which learn how to reproduce simulation output in fractions of the time</strong> taken by the original simulation.</p>
+        </div>
+        <div class="fullwidth-body-portfolio">
+            <p>
+              In order to build an effective AI emulator of a simulation there are two key ingredients. First, it is essential to provide your machine-learning model with a training set that contains all the essential features of your simulation, without this you cannot hope for the resulting AI emulator to be a reliable representation of the true simulation. Second, you need to correctly characterize the inherent imperfections associated with all machine-learning models, without this your AI emulator will return output for any given configuration of input-variables, but this output will often be quite wrong (i.e. different to the true value it aims to emulate).
+            </p>
+          </div>
+            <div class="image-fullwidth-portfolio">
+              <img src="images/simxelerate-process.png" class="portfolio-img" alt="Flow chart providing an overview of the SimXelerate AI emulator process">
+            </div>
+          <div class="fullwidth-body-portfolio">
+            <p>
+              SimXelerate uses the PolyChord full-coverage sampler to generate its training set, this guarantees a complete and robust training set. Then this training set is passed through a bespoke machine-learning process that delivers the likely correct prediction of the original simulation’s input given the passed input parameter configuration, as well as its uncertainty. This guarantees that your answer is both accurate and complete, delivering a drastically superior AI emulator.
+            </p>
+          </div>
+
+        <!-- Case Study section header -->
+        <h2 id="section-subhead-portfolio">Customer Case Study - AVL EV-battery simulations</h2>
+
+        <!-- Case Study 1st full-width centred paragraph -->
+        <div class="fullwidth-body-portfolio">
+              <p>
+                  For AVL Advanced Simulation Technologies, we validated how PolyChord’s full-coverage sampling of their EV battery simulation, in combination with our cutting-edge machine learning techniques, delivered a far superior AI emulator of their original simulation. In our initial work for them, we considered a simulation with 39 parameters, but PolyChord will work effectively for 100s of parameters.
+              </p>
+        </div>
+      </div>
+      <br>
+      <!-- Case Study 2nd paragraph with gif of emulator widget to right-->
+        <div class="portfolio-section-imgwrap">
+          <div class="right-body-portfolio">
+            <p>
+              The <strong>SimXelerate AI emulator delivered non-biased, i.e. representative of the truth, simulation outputs in under a second, rather than minutes as with the original simulation</strong>. With this AI emulator, a complex design-space query that took 11 weeks with the original simulation was done in less than an hour using SimXelerate. The animation on the right shows SimXelerate producing EV-battery simulation output in almost real time as a user adjusts the settings of the input parameters on the control panel to the right. Each user adjustment would've taken the original simulation over a minute to recompute and update the output values depicted by the heights of the bars on the left.
+            </p>
+          </div>
+          <div class="image-right-portfolio">
+              <img src="videos/AVL_widget.gif" class="portfolio-img" alt="Animation of SimXelerate AI emulator predicting EV battery simulation in almost real time", style="max-width:105%">
+          </div>
+        </div>
+
+        <br>
+        <div class="portfolio-section-imgwrap">
+
+          <div class="image-left-portfolio">
+              <img src="images/simxelerate-performance.png" class="portfolio-img" alt="Histogram showing improvement in accuracy from using PolyChord-sampler training sets">
+          </div>
+          <div class="left-body-portfolio">
+              <p>The plot to the left shows the density of model predictions that have a particular prediction error (established using a test data set, previously unseen by the network). <strong>The more tightly centred around a zero prediction error, the better the model. The PolyChord-sampled training set (blue) substantially outperforms a standard-sampling approach (red)</strong> as it is tightly centred around a 0% prediction error, whereas the red distribution is concentrated between a prediction error of 6% and 10%. Importantly, <strong>these differences are most marked around the peaks of the simulation output</strong> (the metric being maximised in an optimisation), where information is completely missing from the standard-sampled training set.</p>
+          </div>
+        </div>
+
+  </section>
+
+
+
+
+    <!-- Footer -->
+    <section id=footer>
+    <footer>
+       <div class="footer-container">
+           <div class="footer__socials-container">
+               <a href="https://twitter.com/polychordcouk" target="_blank" class="social__link" rel="noopener noreferrer">
+                   <img src="images/icons/twitter.png" alt="twitter.png" class="social__img">
+               </a>
+               <a href="https://www.linkedin.com/company/polychord-ltd/" target="_blank" class="social__link" rel="noopener noreferrer ">
+                   <img src="images/icons/linkedin.png" alt="linkedin.png" class="social__img">
+               </a>
+               <a href="https://www.youtube.com/channel/UCeTdzBWCAklZFQk9dv-XrnQ" target="_blank" class="social__link" rel="noopener noreferrer ">
+                   <img src="images/icons/youtube.png" alt="youtube.png" class="social__img">
+               </a>
+           </div>
+           <div class="footer__info-container">
+               <a href="privacy-policy.html" class="footer__text-link">
+                   <p class="footer__text">Privacy Policy</p>
+               </a>
+               <div class="footer__bullet"></div>
+               <p class="footer__text">©2024 PolyChord Ltd</p>
+               <div class="footer__bullet"></div>
+               <a href="contact.html" class="footer__text-link">
+                   <p class="footer__text">Contact Page</p>
+               </a>
+           </div>
+       </div>
+    </footer>
+    </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+   <script>
+       function updatemenu() {
+       if (document.getElementById('responsive-menu').checked == true) {
+           document.getElementById('menu').style.borderBottomRightRadius = '0';
+           document.getElementById('menu').style.borderBottomLeftRadius = '0';
+       }else{
+           document.getElementById('menu').style.borderRadius = '10px';
+       }
+       }
+   </script>
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/portfolio_style.css">
+    <!-- Glide -->
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <!-- Google Icons/Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>PolyChord</title>
+</head>
+
+<body>
+        <!-- NAV Bar -->
+        <nav class="navbar" id='menu'>
+            <a class="branding-link" href="index.html"><img src="images/logos/logo-white.png" alt="nav-logo.png" class="nav-branding"></a>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href='index.html#partners'>Partners</a></li>
+                <li><a href='index.html#contact'>Contact Us</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+    <!-- Small Molecules main section-->
+    <section>
+
+
+      <!-- Main Section -->
+      <section>
+
+        <!-- Header text -->
+        <div class="portfolio-section-imgwrap">
+            <h2 id="section-head-portfolio">Small molecule analysis - all possible configurations, dynamics and complex interactions at any temperature</h2>
+         </div>
+
+      <div class="portfolio-section-imgwrap">
+          <!-- Image div on the left -->
+          <div class="image-left-portfolio">
+              <img src="images/Front-page/data-visualization-carousel-8.png" class="portfolio-img" alt="Illustration of a small molecule">
+          </div>
+
+          <!-- Text div on the right -->
+          <div class="left-body-portfolio">
+            <p>PolyChord is transforming the landscape of small-molecule analysis with Molytics, our cutting-edge technology that reveals the lowest energy state of molecules and small-molecule complexes. <strong>Unique to our full-coverage sampling of the energy function, is the provision of information about the dynamical movement of the molecules and complexes, and the ability to probe the molecular structure and dynamics at any temperature</strong>. By unlocking this level of molecular detail, we’re pioneering solutions that drive sustainable innovation across critical industries.
+            </p>
+          </div>
+      </div>
+      <br>
+
+        <div class="portfolio-section-imgwrap">
+
+          <div class="right-body-portfolio">
+              <p> The PolyChord sampler is being used to map out the energy functions of small molecules (and their complexes). It is a state-of-the-art nested sampling algorithm <a href="https://academic.oup.com/mnras/article/453/4/4384/2593718?login=false" target="_blank">[1]</a>, particularly adept at exploring complex parameter spaces with multiple local minima, where traditional sampling methods will falter.</p>
+            </div>
+          <div class="image-right-portfolio">
+              <img src="images/Front-page/data-visualization-carousel-8_2.png" class="portfolio-img" alt="Illustration of a small molecule">
+          </div>
+        </div>
+
+        <br>
+        <div class="portfolio-section-imgwrap">
+          <div class="image-left-portfolio">
+            <img src="images/Front-page/data-visualization-carousel-8_3.png" class="portfolio-img" alt="Illustration of a small molecule">
+        </div>
+          <div class="left-body-portfolio">
+              <p>We have developed our approach by leveraging the natural link between statistical mechanics, information theory, and Bayesian inference. Recent advances in density-functional theory codes (e.g. <a href="https://fhi-aims.org/" target="_blank">https://fhi-aims.org/</a>) now allow us to compute the free energy of molecular configurations with high accuracy, akin to solving the Schrödinger equation. By efficiently exploring these free-energy landscapes, PolyChord learns the natural configurations and dynamical behaviour of small molecules "blind". Furthermore, these properties can be explored using PolyChord's sampling output at any temperature.</p>
+            </div>
+        </div>
+        <br>
+
+        <div class="portfolio-section-imgwrap">
+          <div class="right-body-portfolio">
+              <p> This methodology has proven successful in materials science <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.89.022302" target="_blank">[2, 3]</a> and has been recently used to accurately determine the structure and partition functions of molecules like Butane-1,4-diol and various alkanes. We believe this approach holds significant promise for drug design, enabling the identification of optimal molecular structures directly from their free-energy profiles. In the same way, it can aid discovery of new “green” small-molecule catalysts, solvents and enzymes.
+              </p>
+          </div>
+          <div class="image-right-portfolio">
+              <img src="images/Front-page/data-visualization-carousel-8_4.png" class="portfolio-img" alt="Illustration of a small molecule">
+          </div>
+        </div>
+        <br>
+
+        <div class="portfolio-section-fullwidth">
+          <div class="fullwidth-body-portfolio">
+            <p>
+              [1] Handley, W. J.; Hobson, M. P.; Lasenby, A. N. (2015) - <a href="https://academic.oup.com/mnras/article/453/4/4384/2593718" target="_blank">PolyChord: Nested Sampling for Cosmology</a>,  Monthly Notices of the Royal Astronomical Society, Vol. 450, p. L61-L65
+            </p>
+            <br>
+            <p>
+              [2] Ashton et al. (2022) - <a href="https://www.nature.com/articles/s43586-022-00121-x" target="_blank">Nested sampling for physical scientists</a>, Nature Reviews Methods Primers, volume 2, Article number: 39
+            </p>
+            <br>
+            <p>
+              [3] Pártay, L. B.; Bartók, A.P; Csányi, G (2014) - <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.89.022302" target="_blank">Nested sampling for materials: The case of hard spheres</a>, Physical Review E, 89, 022302
+            </p>
+          </div>
+        </div>
+
+    </section>
+    <!-- Footer -->
+    <section id=footer>
+    <footer>
+       <div class="footer-container">
+           <div class="footer__socials-container">
+               <a href="https://twitter.com/polychordcouk" target="_blank" class="social__link" rel="noopener noreferrer">
+                   <img src="images/icons/twitter.png" alt="twitter.png" class="social__img">
+               </a>
+               <a href="https://www.linkedin.com/company/polychord-ltd/" target="_blank" class="social__link" rel="noopener noreferrer ">
+                   <img src="images/icons/linkedin.png" alt="linkedin.png" class="social__img">
+               </a>
+               <a href="https://www.youtube.com/channel/UCeTdzBWCAklZFQk9dv-XrnQ" target="_blank" class="social__link" rel="noopener noreferrer ">
+                   <img src="images/icons/youtube.png" alt="youtube.png" class="social__img">
+               </a>
+           </div>
+           <div class="footer__info-container">
+               <a href="privacy-policy.html" class="footer__text-link">
+                   <p class="footer__text">Privacy Policy</p>
+               </a>
+               <div class="footer__bullet"></div>
+               <p class="footer__text">©2024 PolyChord Ltd</p>
+               <div class="footer__bullet"></div>
+               <a href="contact.html" class="footer__text-link">
+                   <p class="footer__text">Contact Page</p>
+               </a>
+           </div>
+       </div>
+    </footer>
+    </section>
+   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+   <script>
+       function updatemenu() {
+       if (document.getElementById('responsive-menu').checked == true) {
+           document.getElementById('menu').style.borderBottomRightRadius = '0';
+           document.getElementById('menu').style.borderBottomLeftRadius = '0';
+       }else{
+           document.getElementById('menu').style.borderRadius = '10px';
+       }
+       }
+   </script>
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!-- bridges.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/portfolio_style.css">
+    <!-- Glide -->
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <!-- Google Icons/Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>PolyChord</title>
+</head>
+
+<body>
+        <!-- NAV Bar -->
+        <nav class="navbar" id='menu'>
+            <a class="branding-link" href="index.html"><img src="images/logos/logo-white.png" alt="nav-logo.png" class="nav-branding"></a>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href='index.html#partners'>Partners</a></li>
+                <li><a href='index.html#contact'>Contact Us</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+    <!-- Main Section -->
+    <section>
+
+      <!-- Header text -->
+      <div class="portfolio-section-imgwrap">
+          <h2 id="section-head-portfolio">Data-Collection Strategy & Sensor-Placement Optimisation</h2>
+      </div>
+
+      <!-- First section with full-width centred text -->
+      <div class="portfolio-section-fullwidth">
+        <div class="fullwidth-body-portfolio">
+            <p>In many situations, data collection is performed iteratively in order to solve a problem, i.e. it is collected at repeated intervals over time to update your state of knowledge; for example, in search-and-rescue, and surveillance activities. On each data-collection iteration,
+              <strong> there is the question of what kind of data you should collect.</strong> This can be as simple as where in a space you should move to make your next data collection step (changing what areas of the space you can see or detect), and/or it can be a question of what type of sensor you deploy.</p>
+          </div>
+          <div class="fullwidth-body-portfolio">
+              <p>Even in situations where a static sensor network is needed for monitoring purposes - for example, an alarm network to detect toxic gas leaks - there is the <strong>question of where you should place the sensors in order for the network to operate optimally and be robust to inevitable sensor failure over time.</strong></p>
+          </div>
+        </div>
+        <br>
+
+        <!-- 2nd section with video to right -->
+        <div class="portfolio-section-imgwrap">
+          <div class="left-body-portfolio">
+            <p>Through contract work with the UK Ministry of Defence's DSTL (Defence Science and Technology Laboratory), we have developed a new statistical framework - MIDAS - to answer these exact questions. <strong>MIDAS (Maximal Information for Data Acquisition Strategy) was developed over 2 years with DSTL</strong>. It was originally designed to systematically decide the best strategy for collecting sensor data, in order to detect and locate a nefarious transmitter in an urban cityscape.</p>
+          </div>
+
+            <div class="left-body-portfolio">
+              <!--video autoplay="true" loop="loop" width=80% controls-->
+              <video autoplay loop muted playsinline width=60% >
+                  <source src="images/midas/increasing-sensors-midas.mp4" type="video/mp4">
+              </video>
+          </div>
+        </div>
+        <br>
+
+        <!-- 3rd section with full-width centred text -->
+        <div class="portfolio-section-fullwidth">
+          <div class="fullwidth-body-portfolio">
+              <p>In the above video we show a simple example of MIDAS at work, deciding on the number and placement of sensors to fit onto a set of buildings for optimal surveillance coverage. The scene is viewed in 2D from above, buildings are depicted with white blocks, and sensors with coloured dots (with each sensor's field of view displayed with coloured shading). We see MIDAS experiment with the number of sensors and their placement before it concludes that 4 sensors provide sufficient information (over 99% coverage) and outputs a library containing a selection of optimal options for where to place all 4 sensors.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-section-fullwidth">
+          <div class="fullwidth-body-portfolio">
+              <p>In our latest development phase we extended MIDAS to be able to independently play a simulated game against a human. Despite the simplicity of the game,<strong> we were excited to see that MIDAS consistently beat human opponents</strong>; i.e. MIDAS found the location of the human’s virtual flag in less steps than in took for the human player to find MIDAS's flag. </p>
+          </div>
+        </div>
+        <br>
+
+        <!-- 4th section with image to the right -->
+        <div class="portfolio-section-imgwrap">
+          <div class="right-body-portfolio">
+            <p>
+                The right image shows a snapshot from this particular game, with the human team players in red, and MIDAS’s in blue. Both teams are attempting to capture the opponent’s communications station (circles), by moving 4 multi-functional drones through the space (triangles or squares depending on detection mode activated in the current step).
+            </p>
+            <br>
+            <p>
+              As the complexity of problems increases, e.g. with numerous multi-functional drones moving in 3 dimensions, it becomes impossible for the human decision maker to make robust and optimal strategy decisions.<strong> A human cannot operate effectively in high dimensions, MIDAS can.</strong>
+            </p>
+          </div>
+        <!-- Image div on the right -->
+          <div class="image-right-portfolio">
+              <img src="images/midas/midas-game-snapshot.png" class="portfolio-img" alt="Snapshot of MIDAS vs human capture-the-flag simulated game" style="max-width:80%">
+          </div>
+        </div>
+
+        <br>
+        <!-- 5th section with image to the left -->
+        <div class="portfolio-section-imgwrap">
+          <div class="image-left-portfolio">
+            <img src="images/midas/MIDAS_vs_Human_Animation.gif" class="portfolio-img" alt="Animation of MIDAS's typical moves in a simulated capture-the-flag game">
+          </div>
+          <div class="left-body-portfolio">
+              <p>
+                  On each time-step in this simulated game all drones collect fresh data and relay it back to their communications station (requiring direct or indirect line of sight - green dashed line). Each player then makes a decision on what to do next based on their latest dataset. To the left we show an animation of a typical set of MIDAS moves for this particular game. There are several interesting choices it makes that gives it the edge over the human - such as moving up close to buildings to maximise sensor field of view, and using only a single drone to monitor the bottom horizontal corridor.
+              </p>
+              <br>
+              <p>
+                  Every new application of MIDAS has delivered new, and often counter-intuitive (until you understand the reason for its decision), approaches to data collection decision making. MIDAS is genuinely our most exciting tool to date.
+              </p>
+          </div>
+        </div>
+
+        <br>
+        <!-- Final section full-width centred text -->
+        <div class="portfolio-section-fullwidth">
+          <div class="fullwidth-body-portfolio">
+              <p>MIDAS has also been extended to optimise with the knowledge that a number of sensors might fail at any given time, to guarantee robustness to failure. </p>
+          </div>
+          <div class="fullwidth-body-portfolio">
+            <p><strong>MIDAS has since been adapted for use in optimising communication transmitter/receiver configurations</strong> for communications-network design. <strong>We have validated this approach for designing communications networks for use with connected and driverless vehicles</strong> with funding from <a href="https://zenzic.io/" target="_blank">Zenzic</a>, where its ability to ensure consistent coverage even when a transmitter/receiver drops out is essential. More information on this project, please visit our <a href="https://polychord.github.io/Zenzic-Website/" target="_blank">Zenzic project pages</a>.</p>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <section id=footer>
+    <footer>
+       <div class="footer-container">
+           <div class="footer__socials-container">
+               <a href="https://twitter.com/polychordcouk" target="_blank" class="social__link" rel="noopener noreferrer">
+                   <img src="images/icons/twitter.png" alt="twitter.png" class="social__img">
+               </a>
+               <a href="https://www.linkedin.com/company/polychord-ltd/" target="_blank" class="social__link" rel="noopener noreferrer ">
+                   <img src="images/icons/linkedin.png" alt="linkedin.png" class="social__img">
+               </a>
+               <a href="https://www.youtube.com/channel/UCeTdzBWCAklZFQk9dv-XrnQ" target="_blank" class="social__link" rel="noopener noreferrer ">
+                   <img src="images/icons/youtube.png" alt="youtube.png" class="social__img">
+               </a>
+           </div>
+           <div class="footer__info-container">
+               <a href="privacy-policy.html" class="footer__text-link">
+                   <p class="footer__text">Privacy Policy</p>
+               </a>
+               <div class="footer__bullet"></div>
+               <p class="footer__text">©2024 PolyChord Ltd</p>
+               <div class="footer__bullet"></div>
+               <a href="contact.html" class="footer__text-link">
+                   <p class="footer__text">Contact Page</p>
+               </a>
+           </div>
+       </div>
+    </footer>
+    </section>
+   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+   <script>
+       function updatemenu() {
+       if (document.getElementById('responsive-menu').checked == true) {
+           document.getElementById('menu').style.borderBottomRightRadius = '0';
+           document.getElementById('menu').style.borderBottomLeftRadius = '0';
+       }else{
+           document.getElementById('menu').style.borderRadius = '10px';
+       }
+       }
+   </script>
+   <script src="script.js"></script>
+</body>
+</html>
